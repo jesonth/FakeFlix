@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="netflix_logo2.jpeg" alt="Netflix Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><button>home</button></a></li>
+                    
+                    <li><a href="tvshows.html"><button>TV Shows</button></a></li>
+                    
+                    <li><a href="#"><button>New & Popular</button></a></li>
+                    <li><a href="#"><button>My List</button></a></li>
+                </ul>
+            </nav>
+            <div class="bottom-logo">
+                <img src="netflix_logo.jpeg" alt="bottom-logo">
+            </div>
+        </aside>
+        <div class="main-content">
+            <img id="background-image" src="background1.jpeg" alt="Background Image">
+            <div class="info">
+                <h1>13 REASONS WHY</h1>
+                <p class="match">97% Match 2018 TV-MA 2 Seasons HD 5.1</p>
+                <p class="coming-soon">Season 3 Coming Friday</p>
+                <p class="description">Months after the Spring Fling, Liberty High is hit with a new shock when Bryce Walker is murdered the night of homecoming ... and everyone is a suspect.</p>
+                <button class="watch-button">watch</button>
+       </div>
+        <div class="thumbnails">
+            <img src="thumbnail1.jpeg" alt="13 Reasons Why" onclick="changeBackground('background1.jpeg','13 REASONS WHY','97% Match 2018 TV-MA 2 Seasons HD 5.1','Season 3 Coming Friday','Months after the Spring Fling, Liberty High is hit with a new shock when Bryce Walker is murdered the night of homecoming ... and everyone is a suspect.')">
+            <img src="thumbnail2.jpeg" alt="Hyperdrive" onclick="changeBackground('background2.jpeg','HYPERDRIVE','90% Match 2019 TV-PG season HD','New episodes weekly','Elite street racers from arounf the world tests their limits in custom cars on biggest,baddest automative obstacle course ever built')">
+            <img src="thumbnail3.jpeg" alt="Rust Valley Restorers" onclick="changeBackground('background3.jpeg','RUST VALLEY RESTORERS','85 % match 2019 TV-14','Season 2 coming soon','Mike hall and his team of gearheads restore and sell classic cars in the heart of rust vally')">
+            <img src="thumbnail4.jpeg" alt="American Factory" onclick="changeBackground('background4.jpeg','AMERICAN FACTORY','95% Match 2019 TV-14 1 season HD','Now Streaming','In Post-industrial Ohio,a chinese billionaire opens a new factory in the husk of an abandond GM plant and hires 2,000 blue collar Ameriacans')">
+            <img src="thumbnail5.jpeg" alt="Hero Mask" onclick="changeBackground('background5.jpeg','HERO MASK','80% /match 2018 TV-14 2 Seasons HD','season 2 Now Streaming','After a rash mysterious deaths,Crown prosecutor Sarsh Sinclair and SSC agent James Blood discovers a conspiracy surrounding uncanny new bio-marks. ')">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv Shows</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #111010;
+            color: white;
+            display: flex   ;
+            flex-direction: column;
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+            
+            color: black;
+            width: 50%;
+            padding: 10px;
+            
+           
+        }
+
+        .search-input{
+            width: 1000%;
+            padding: 10px;
+            background-color: rgb(236, 225, 225);
+            color: black;
+            font-size: 16px;
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, rgb(255, 0, 0),rgb(229, 255, 0),maroon );
+            border-image-slice: 1;
+           
+
+        }
+      /*  @keyframes moveGradient{
+            0%{
+                border-image: linear-gradient(to right, rgb(255, 0, 0),rgb(229, 255, 0),maroon );
+            }
+            100%{
+                border-image: linear-gradient(to right, maroon,rgb(255, 0, 0) );
+            }
+        }*/
+
+        .search-button{
+            background-color:#e50914;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 100px;
+            cursor: pointer;
+            margin-left: 10px;
+
+        }
+
+        .search-button:hover{
+            background-color: #b60912e5;
+            color: black;
+        }
+
+        .a img{
+            object-fit: cover;
+            justify-content: space-around;
+            width: 200px;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 3%;
+        }
+
+        .a img:hover{
+            transform: scale(1.1);
+        }
+
+        .b img{
+            object-fit: cover;
+            justify-content: space-around;
+            width: 200px;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 3%;
+        }
+
+        .b img:hover{
+            transform: scale(1.1);
+            
+        }
+
+        .c img{
+            object-fit: cover;
+            justify-content: space-around;
+            width: 200px;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 3%;
+        }
+
+        .c img:hover{
+            transform: scale(1.1);
+            
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bb{
+            margin-top:50px;
+            border:#111010;
+            color: white;
+            background-color: rgba(255, 0, 0, 0.815);
+            border-radius: 3%;
+            padding: 6px;
+            cursor: pointer;
+            
+        }
+        .bb:hover{
+            background-color: rgba(223, 13, 13, 0.815);
+            color:black
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="netflix_logo2.jpeg" alt="Netflix Logo">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search for a movie, tv Shows, documentaries...">
+            <button class="search-button">Search</button>
+        </div>
+        <div>
+            <a href="index.html"><button class="bb">Main</button></a>
+            <a href="home.html"><button class="bb">home</button></a>
+           
+            
+            <a href="mylist.html"><button class="bb">My list</button></a>
+            
+        </div>
+    </div>
+    
+    <div class="a">
+        <h3>Top Shows in the U.S. Today</h3>
+        <img src="got.jpg" alt="Game of Thrones">
+        <img src="bridgerton.jpg" alt="Bridgerton">
+        <img src="lucifer.jpg" alt="Lucifer">
+        <img src="saul.jpg" alt="Better call Saul">
+        <img src="stranger.jpg" alt="Stranger Things">
+        <img src="Witcher.jpg" alt="The Withcer">
+    </div>
+    <br>
+    <br>
+    <div class="b">
+        <h3>Top Picks For You</h3>
+        <img src="walking.jpg" alt="walking dead">
+        <img src="wednesday.jpg" alt="wednesday">
+        <img src="modern.jpg" alt="modern family">
+        <img src="house.jpg" alt="house of the dragons">
+        <img src="dark.jpg" alt="Dark">
+        <img src="friends.jpg" alt="friends">
+
+    </div>
+    <br>
+    <br>
+    <div class="c">
+        <h3>Movies</h3>
+        <img src="Dear.jpg" alt="Dearfriend">
+        <img src="Dune.webp" alt="Dune">
+        <img src="Goat.jpg" alt="goatLife">
+        <img src="Grey.jpg" alt="Grey man">
+        <img src="Tenet .jpg" alt="Tenet">
+        <img src="Adam.jpg" alt="The Adam Project">
+    </div>
+    
+</body>
+</html>

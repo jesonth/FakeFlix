@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            p{
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(4, 28, 247);
+                
+            }
+            
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #00000000;
+                margin: 0;
+                overflow: hidden;
+            }
+            @keyframes rotate{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                
+                }
+                }
+            .donut{
+                
+                animation: rotate 10s linear infinite;
+
+                svg{
+                    width: 200px;
+                    height: 200px;
+                }
+
+            }
+        </style>
+    </head>
+    <body >
+        <p>Meta AI</p>
+        <div class="donut">
+            <svg viewbox="0 0 100 100">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(90)">
+                        <stop offset="0%" stop-color="#0ff" />
+                        <stop offset="50%" stop-color="#00f" />
+                        <stop offset="100%" stop-color="#f526a2" />
+                    </linearGradient>
+                    <mask id="donut-mask">
+                        <rect width="100%" height="100%" fill="white"/>
+                        <circle cx="50" cy="50" r="25" fill="black"/>
+
+                    </mask>
+                </defs>
+                <circle cx="50" cy="50" r="40" fill="url(#gradient)" mask="url(#donut-mask)" />
+            </svg>
+
+        </div>
+      
+    </body>
+</html>

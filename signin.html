@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <style>
+        .body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            
+        }
+        body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('net_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust this value to make it darker or lighter */
+    z-index: -1;
+}
+
+    .container{
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        z-index: 2;
+        max-width: 350px;
+        width: 100%;
+        padding: 40px 20px;
+        background-color: rgba(12, 12, 12, 0.747);
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .button{
+        background:rgb(255, 0, 0) ;
+        width: 180px;
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .button:hover{
+        background:rgb(168, 1, 1);
+        transform: scale(1.1);
+    }
+    .text{
+        font-size: smaller;
+    }
+
+    .email{
+        padding:10px 10px;
+        background:rgb(34, 33, 33);
+        border: 1px;
+        border-radius: 10px;
+        color: white;
+        
+    }
+    .email:hover{
+        background:rgba(0, 0, 0, 0.493) ;
+    }
+    .signin{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: -100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="signin">Sign In</h1>
+        <form class="form">
+            <input class="email" type="email" placeholder="Email or phone number" required><br>
+            <input class="email" type="password" placeholder="password" required><br>
+            <button class="button">Sign In</button>
+            <br><br><br>
+            <p class="text">New to Netflix?<b>SignUp now</b>
+                This page is protected by Google reCAPTCHA to 
+                enusre you'renot a bot. <a>Learn More</a></p>
+
+        </form>
+    </div>
+</body>
+</html>
